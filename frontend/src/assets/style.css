@@ -111,26 +111,31 @@ hr {
     margin: 10px 100px;
 }
 .item-container .item-grid {
-      display: grid;
+    display: grid;
     grid-template-columns: auto auto auto auto;
 }
-.item-container .item{
-    margin-left: 10px;
+.item-container .item {
+    margin: 30px 0;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
 }
 .item-container .item-grid .item-background {
     width: 100%;
     height: 370px;
 }
-.item-container .item-grid .item-background .item-image{
-    background-color: rgb(235, 235, 235, 70%);
+.item-container .item-grid .item-background .item-image {
+    width: 80%;
+    margin: 0 auto;
 }
+
 .item-container .item-grid .item-background .item-image img {
     width: 100%;
     height: 250px;
     padding: 3%;
 }
 .item-container .item-grid .item-bottom {
-    margin-top: 20px;
+    margin: 20px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -141,7 +146,7 @@ hr {
     color: #fff;
     padding: 5px 5px;
     border: 0;
-    white-space:nowrap;
+    white-space: nowrap;
 }
 .item-container .item-grid .item-bottom .added-cart {
     background-color: #59af0f;
@@ -160,9 +165,9 @@ span#count {
 #plus {
     padding: 0px 3px;
 }
-.product-heading h2{
+.product-heading h2 {
     margin: 10px 100px;
-    white-space:nowrap;
+    white-space: nowrap;
 }
 /***************************
 ****Media Screen
@@ -192,13 +197,13 @@ span#count {
         width: 85%;
     }
     .item-container .item-grid .item-bottom .added-cart {
-            padding: 0px 10px;
+        padding: 0px 10px;
     }
     span#count {
         padding: 0px 1px;
     }
-    .heading-sign-in h2{
-        font-size:22px;
+    .heading-sign-in h2 {
+        font-size: 22px;
     }
     .popup .popup-preview {
         margin: 0px;
@@ -251,7 +256,7 @@ span#count {
     .item-container .item-grid .item-bottom .added-cart {
         font-size: 8px;
     }
-    .sign-up-bottom a{
+    .sign-up-bottom a {
         white-space: nowrap;
     }
     section .text p {
@@ -265,14 +270,14 @@ span#count {
         white-space: nowrap;
     }
 }
-@media screen and (max-width: 380px){
+@media screen and (max-width: 380px) {
     .text p {
-    font-size: 20px;
-    position: absolute;
-    bottom:-20px;
-    white-space:nowrap;
+        font-size: 20px;
+        position: absolute;
+        bottom: -20px;
+        white-space: nowrap;
     }
-    #terms{
+    #terms {
         width: 16%;
     }
     .item-container .item-grid {
@@ -282,8 +287,6 @@ span#count {
         width: 88%;
         height: 280px;
     }
-
-
 }
 /******************************
 *******Footer
@@ -324,7 +327,7 @@ span#count {
 .copyright p {
     padding: 10px 0px;
 }
-footer .foot h2{
+footer .foot h2 {
     text-transform: capitalize;
 }
 /******************************
@@ -506,7 +509,7 @@ button.number {
         width: 100%;
     }
 }
-@media screen and (min-width:501px) and (max-width: 750px) {
+@media screen and (min-width: 501px) and (max-width: 750px) {
     .box {
         height: 150px;
     }
@@ -524,7 +527,7 @@ button.number {
         width: 100%;
     }
 }
-@media screen and (min-width:751px) and (max-width: 1200px) {
+@media screen and (min-width: 751px) and (max-width: 1200px) {
     .box {
         height: 150px;
     }
@@ -605,7 +608,6 @@ button.number {
     width: 80%;
 }
 .popup .popup-preview .input .input-feilds .sign-up-bottom {
-   
     text-align: center;
     display: flex;
     justify-content: center;
@@ -657,14 +659,11 @@ button.number {
         position: absolute;
         left: 84%;
     }
-    .sign-up-bottom{
-
+    .sign-up-bottom {
         font-size: 10px;
     }
-    
 }
 @media screen and (min-width: 501px) and (max-width: 750px) {
-
     .popup .popup-inner {
         top: 5%;
         left: 12vw;
@@ -689,14 +688,11 @@ button.number {
         position: absolute;
         left: 84%;
     }
-    .sign-up-bottom{
-
+    .sign-up-bottom {
         font-size: 10px;
     }
-   
 }
-@media screen and (min-width:751px) and (max-width: 1200px) {
-
+@media screen and (min-width: 751px) and (max-width: 1200px) {
     .popup .popup-inner {
         top: 5%;
         left: 12vw;
@@ -721,9 +717,7 @@ button.number {
         position: absolute;
         left: 84%;
     }
-    .sign-up-bottom{
-
+    .sign-up-bottom {
         font-size: 10px;
     }
-  
 }

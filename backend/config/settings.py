@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
-# import django_heroku
-import cloudinary 
+import django_heroku
+import cloudinary
 import cloudinary.uploader
 import cloudinary.api
 
@@ -45,8 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.users', 
-    'apps.carts', 
+    'apps.users',
+    'apps.carts',
     'apps.orders',
     'apps.items',
     'cloudinary',
@@ -89,24 +89,24 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#      'default': {
-#          'ENGINE': 'django.db.backends.postgresql',
-#          'NAME': 'd1i2im6c9n6ca0',
-#          'USER': 'satpaxetsdxlny',
-#          'HOST': 'ec2-52-86-56-90.compute-1.amazonaws.com',
-#          'PORT': 5432,
-#          'PASSWORD': 'ed1c113f3927d08a3ed801f6395f2a6b21627162b1676ead3e0a30e5eea331f9',
-#      }
-#  }
-
-#Local Database
 DATABASES = {
-   'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-   }
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd1i2im6c9n6ca0',
+        'USER': 'satpaxetsdxlny',
+        'HOST': 'ec2-52-86-56-90.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'PASSWORD': 'ed1c113f3927d08a3ed801f6395f2a6b21627162b1676ead3e0a30e5eea331f9',
+    }
 }
+
+# Local Database
+# DATABASES = {
+#    'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+# }
 
 # Heroku PostgreSQL Database
 # django_heroku.settings(locals())
@@ -161,9 +161,9 @@ STATIC_URL = '/static/'
 #os.makedirs(STATIC_TMP, exist_ok=True)
 #os.makedirs(STATIC_ROOT, exist_ok=True)
 # Extra places for collectstatic to find static files.
-#STATICFILES_DIRS = (
- #   os.path.join(BASE_DIR, 'static'),
-#)
+# STATICFILES_DIRS = (
+#   os.path.join(BASE_DIR, 'static'),
+# )
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -171,13 +171,12 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-cloudinary.config( 
-  cloud_name = "dr3w1s6fh", 
-  api_key = "122513451951511", 
-  api_secret = "bFxtlVHhjCDQCRvJweQxeLNVFo4" 
+cloudinary.config(
+    cloud_name="dr3w1s6fh",
+    api_key="122513451951511",
+    api_secret="bFxtlVHhjCDQCRvJweQxeLNVFo4"
 )
 
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }
-
