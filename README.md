@@ -20,7 +20,7 @@ Check out [API LIVE DEMO](https://cooltease-backend.herokuapp.com/) here!!
 1. Git Clone
 
 ```
-git clone https://github.com/Moustapha32/cooltease-moustapha
+git clone https://github.com/Moustapha32/cooltees-moustapha
 ```
 
 2. Backend setting
