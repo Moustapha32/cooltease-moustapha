@@ -1,6 +1,6 @@
-## Live Demo
+## Cool Tees
 
-**This App uses a Heroku free plan, so I am afraid that it takes time to load the pages.**
+**Cool Tees uses a Heroku free plan, so I am afraid that it takes time to load the pages.**
 
 Check out [FRONTEND LIVE DEMO](https://cooltease-frontend.herokuapp.com/) here!!
 
